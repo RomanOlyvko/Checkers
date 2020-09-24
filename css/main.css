@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.clearbox {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+body {
+    background-image: url('../img/bgcolor.jpg');
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#clock {
+    display: block;
+    border: 3px solid #fff;
+    box-shadow: inset 0 0 10px 3px #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+    font-size: 30px;
+    background: #00000085;
+    color: white;
+    z-index: 10;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+#start {
+    display: block;
+    width: 100%;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px outset black;
+    background: green;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#start:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #ffffff;
+}
+
+#stop {
+    display: block;
+    width: 100%;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px outset black;
+    background: red;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#stop:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #ffffff;
+}
+
+#score {
+    display: block;
+    border: 5px outset gray;
+    border-radius: 5px;
+    background: #333333;
+    width: 100%;
+    box-shadow: 0 0 10px 1px #fff;
+    margin: 55px 0;
+}
+
+.left {
+    float: left;
+    width: 85%;
+}
+
+.left table {
+    box-sizing: content-box;
+}
+
+.left table.CheessBlack,
+.left table.CheessWhite {
+    margin: 50px 18px;
+}
+
+.left table.tabl {
+    margin: 65px 18px;
+}
+
+
+.right {
+    float: right;
+    width: 15%;
+}
+@media screen and (max-width: 768px) {
+    .right {
+        width: 100%;
+    }
+    .left table.CheessBlack,
+    .left table.CheessWhite {
+        margin: 0;
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .left table.tabl {
+        margin: 0;
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
+
+#white_block {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+    width: 50%;
+    float: left;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+#black_block {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: black;
+    width: 50%;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+#form_but {
+    display: block;
+}
+
+#White_Plus,
+#Black_Plus,
+#Close {
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 100%;
+    margin: 15px 0;
+    color: White;
+    background: #000000a8;
+    font-size: 15px;
+}
+#White_Plus:hover,
+#Black_Plus:hover,
+#Close:hover {
+    cursor: pointer;
+    background: #000;
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+#block_tabl {
+    border: 25px outset white;
+    border-radius: 5px;
+    height: 537px;
+    width: 700px;
+    float: left;
+}
+
+.tabl {
+    display: inline-block;
+    border: 5px outset #fff;
+    float: left;
+    border-collapse: collapse;
+    background-color: black;
+    z-index: 9;
+}
+
+tr.center_line {
+    border-bottom: 5px outset #fff;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    width: 70px;
+    height: 55px;
+    padding: 5px;
+}
+
+.CheessBlack {
+    border: 10px outset white;
+    border-radius: 5px;
+    z-index: 11;
+    background: white;
+    float: left;
+}
+.CheessBlack tbody {
+    box-shadow: 0 0 10px 1px #000;
+}
+
+.CheessBlack td {
+    border-radius: 5px;
+}
+
+.CheessWhite {
+    border: 10px outset black;
+    border-radius: 5px;
+    z-index: 10;
+    background: white;
+    float: left;
+}
+
+.CheessWhite td {
+    border-radius: 5px;
+}
+
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+.white {
+    background: white;
+    border: 2px outset red;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 0px 2px #fff, 0 0 2px 2px red;
+}
+
+.black {
+    background: black;
+    border: 2px outset white;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 0px 2px #fff, 0 0 2px 2px #000;
+}

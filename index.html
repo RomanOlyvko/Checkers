@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkers</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <table class="CheessBlack">
+                <tr>
+                    <td>
+                        <div id="sh1" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh2" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh3" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh4" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh5" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh6" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh7" class="checker white"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh8" class="checker white"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tabl">
+                <tr>
+                    <td id="a1"></td>
+                    <td id="b1"></td>
+                    <td id="c1"></td>
+                    <td id="d1"></td>
+                    <td id="e1"></td>
+                    <td id="f1"></td>
+                    <td id="g1"></td>
+                    <td id="h1"></td>
+                </tr>
+                <tr>
+                    <td id="a2"></td>
+                    <td id="b2"></td>
+                    <td id="c2"></td>
+                    <td id="d2"></td>
+                    <td id="e2"></td>
+                    <td id="f2"></td>
+                    <td id="g2"></td>
+                    <td id="h2"></td>
+                </tr>
+                <tr>
+                    <td id="a3"></td>
+                    <td id="b3"></td>
+                    <td id="c3"></td>
+                    <td id="d3"></td>
+                    <td id="e3"></td>
+                    <td id="f3"></td>
+                    <td id="g3"></td>
+                    <td id="h3"></td>
+                </tr>
+                <tr class="center_line">
+                    <td id="a4"></td>
+                    <td id="b4"></td>
+                    <td id="c4"></td>
+                    <td id="d4"></td>
+                    <td id="e4"></td>
+                    <td id="f4"></td>
+                    <td id="g4"></td>
+                    <td id="h4"></td>
+                </tr>
+                <tr>
+                    <td id="a5"></td>
+                    <td id="b5"></td>
+                    <td id="c5"></td>
+                    <td id="d5"></td>
+                    <td id="e5"></td>
+                    <td id="f5"></td>
+                    <td id="g5"></td>
+                    <td id="h5"></td>
+                </tr>
+                <tr>
+                    <td id="a6"></td>
+                    <td id="b6"></td>
+                    <td id="c6"></td>
+                    <td id="d6"></td>
+                    <td id="e6"></td>
+                    <td id="f6"></td>
+                    <td id="g6"></td>
+                    <td id="h6"></td>
+                </tr>
+                <tr>
+                    <td id="a7"></td>
+                    <td id="b7"></td>
+                    <td id="c7"></td>
+                    <td id="d7"></td>
+                    <td id="e7"></td>
+                    <td id="f7"></td>
+                    <td id="g7"></td>
+                    <td id="h7"></td>
+                </tr>
+                <tr>
+                    <td id="a8"></td>
+                    <td id="b8"></td>
+                    <td id="c8"></td>
+                    <td id="d8"></td>
+                    <td id="e8"></td>
+                    <td id="f8"></td>
+                    <td id="g8"></td>
+                    <td id="h8"></td>
+                </tr>
+            </table>
+
+            <table class="CheessWhite">
+                <tr>
+                    <td>
+                        <div id="sh9" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh10" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh11" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh12" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh13" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh14" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh15" class="checker black"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="sh16" class="checker black"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right">
+            <div id="clock"></div>
+            <form action="#" name="myForm">
+                <input id="start" type="button" name="butt" value="Start">
+                <input id="stop" type="button" name="buttSt" value="Stop">
+            </form>
+            <div id="score">
+                <div id="white_block"></div>
+                <div id="black_block"></div>
+            </div>
+            <form id="form_but" action="#" name="myForm2">
+                <input id="White_Plus" type="button" name="buttWhite" value="White (+1)">
+                <input id="Black_Plus" type="button" name="buttBlack" value="Black (+1)">
+                <input id="Close" type="button" name="buttClose" value="Reset">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
